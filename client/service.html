@@ -1,0 +1,31 @@
+<template name='service'>
+    {{#each services}}
+        <div id = "service-{{name}}" class = "service">
+            <div class="container">
+                <div class="row centered">
+                    <div>
+                        <i class="fa fa-{{symbol}}"></i>
+                        <h4>{{title}}</h4>
+                        <p>{{description}}</p>
+                    </div>		
+                </div>
+            </div>
+         </div>
+    {{/each}}
+</template>
+
+
+<!--
+<div  id = "service-ice" class ="service" >
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<div>
+ 					<i class="fa fa-cloud"></i>
+ 					<h4>ICE</h4>
+ 					<p>Apricity OS lets you put your favorite web apps on the desktop with ICE, a simple SSB (Site Specific Browser) manager. These specialized browsers minimize the number of steps between you wanting to use your favorite web app and you actually using it. This embodies our vision here at Apricity: we want to help make your workspace, and your playspace, more productive and elegant.</p>
+ 					
+ 				</div>
+ 				 				
+	 		</div>
+	 	</div>
+	 </div>-->
