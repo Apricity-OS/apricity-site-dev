@@ -7,12 +7,6 @@ Router.route('/', {
     template: 'home'
 });
 
-Router.route('/assets/:thing', {
-    data: function(){
-        return fs
-    }
-});
-
 Router.route('/index.html', {
     action: function(){
         Router.go('home');
