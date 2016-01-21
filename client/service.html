@@ -1,15 +1,19 @@
 <template name='service'>
-    {{#each services}}
-        <div id = "service-{{name}}" class = "service">
-            <div class="container">
-                <div class="row centered">
-                    <div>
-                        <i class="fa fa-{{symbol}}"></i>
-                        <h4>{{title}}</h4>
+    <div id = "service-{{name}}" class = "service">
+        <div class="container">
+            <div class="row centered">
+                <div>
+                    <i class="fa fa-{{symbol}}"></i>
+                    <h4>{{title}}</h4>
+                    {{#unless link}}
                         <p>{{description}}</p>
-                    </div>
+                    {{else}}
+                        {{#with link}}
+                            <p>{{d1}}{{{a}}}{{d2}}</p>
+                        {{/with}}
+                    {{/unless}}
                 </div>
             </div>
-         </div>
-    {{/each}}
+        </div>
+     </div>
 </template>
