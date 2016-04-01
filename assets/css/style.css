@@ -45,6 +45,25 @@ figure.item img {
 	border-bottom: none;
 }
 
+.see-more-link{
+	position:relative;
+}
+
+.see-more-text{
+	margin-right:3px;
+}
+
+.download-arrow{
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid currentColor;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+
 button:focus {
 	outline: 0 !important;
 }
