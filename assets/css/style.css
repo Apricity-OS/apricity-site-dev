@@ -1,8 +1,3 @@
-* {
-	margin: 0;
-	padding: 0px;
-}
-
 .gallery .controls {
 	top: 100%;
 }
@@ -326,7 +321,17 @@ a:focus {
 	background: url(../img/3.jpg) no-repeat center top;
 	min-height: 450px;
 }
+#chat iframe {
+	width:100%;
+	height:100%;
+	min-height:700px;
+	border:none;
+}
 
+#chat {
+	width:100%;
+	min-height:700px;
+}
 
 /* Footer */
 
